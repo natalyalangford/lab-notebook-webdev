@@ -17,27 +17,27 @@
 }*/
 
 li.dog {
-  color: var(--violet); /* purple-pink for dog */
+  color: var(--violet); 
 }
 
 li#cat {
-  color: var(--teal); /* teal for cat */
+  color: var(--teal); 
 }
 
 li.parrot {
-  color: var(--green); /* green for parrot */
+  color: var(--green); 
 }
 
 li.donkey {
-  color: var(--royalblue); /* blue for donkey */
+  color: var(--royalblue); 
 }
 
 li.hedgehog {
-  color: var(--violet); /* dark purple for hedgehog */
+  color: var(--violet); 
 }
 
 li.cat.dog.parrot {
-  color: var(--royalblue); /* blue for combo */
+  color: var(--royalblue);
 }
 
 /* Use descendant, child, and sibling selectors for the second part */
@@ -46,22 +46,18 @@ section li {
   color: var(--green);
 }
 
-/* Make the second food list item (flour) magenta */
 .list-food ol li.second {
   color: var(--darkmagenta);
 }
 
-/* Make milk and coffee (after flour) dark magenta */
 .list-food ol li.second + li {
   color: var(--royalblue);
 }
 
-/* Coffee = violet (the next-next li after flour) */
 .list-food ol li.second + li + li {
   color: var(--darkmagenta);
 }
 
-/* Make cleaning supplies list items green again */
 .list-cleaning li {
   color: var(--green);
 }
