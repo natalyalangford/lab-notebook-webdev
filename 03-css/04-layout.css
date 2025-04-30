@@ -4,12 +4,13 @@
 
 body {
   color: var(--black);
+  margin: 0;
 }
 
 .header,
 .section,
 .aside {
-  box-sizing: content-box;
+  box-sizing: border-box;
   padding: 10px;
   border: 4px solid var(--black);
 }
@@ -19,15 +20,29 @@ body {
 }
 
 .section {
-  display: inline-block;
-  width: 75%;
-  height: 300px;
   background-color: var(--orange);
+  height: 300px;
+  margin-bottom: 10px;
 }
 
+/* Default: stacked layout */
+.section,
 .aside {
-  float: right;
-  width: 25%;
+  display: block;
+  width: 100%;
   height: 300px;
-  background-color: var(--gold);
+}
+
+/* Desktop layout: float aside right */
+@media screen and (min-width: 768px) {
+  .section {
+    width: 75%;
+    display: inline-block;
+  }
+
+  .aside {
+    width: 25%;
+    float: right;
+    background-color: var(--gold);
+  }
 }
