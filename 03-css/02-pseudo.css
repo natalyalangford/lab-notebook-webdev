@@ -2,3 +2,17 @@
   width: 600px;
   margin: 40px auto;
 }
+
+.paragraph::first-letter {
+  font-size: 4rem;
+  display: inline-block;
+  width: 2.5rem;
+  margin-right: 0.5rem;
+  vertical-align: bottom;
+  line-height: 0.9;   
+}
+
+
+
+
+
