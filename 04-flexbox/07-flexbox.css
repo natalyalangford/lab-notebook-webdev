@@ -24,19 +24,116 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column-reverse;
-  align-items: space-between;
-  justify-content: right;
-  align-items: flex-end;
+  height: 400px;
+  width: 100%; 
+  gap: 10px;
+  background-color: rgb(190, 190, 231);
+  justify-content: flex-start;
+  align-content: flex-end;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
+.flex-container-3 .flex-item {
+  width: 100px;
+  height: 50px;
+  background-color: purple;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /* Flex Container 4 */
+.flex-container-4 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  height: 100px;
+  gap: 10px;
+  background-color: rgb(190, 190, 231);
+}
+
+.flex-container-4 .item6,
+.flex-container-4 .item7,
+.flex-container-4 .item8 {
+  order: 1;
+  flex: 1; 
+  min-width: 100px;
+}
+
+.flex-container-4 .item1,
+.flex-container-4 .item2,
+.flex-container-4 .item3,
+.flex-container-4 .item4,
+.flex-container-4 .item5 {
+  order: 2;
+  flex: 1; 
+  min-width: 60px; 
+}
+
+.flex-container-4 .flex-item {
+  background-color: purple;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px; 
+  margin-top: 0; 
+}
 
 /* Flex Container 5 */
+.flex-container-5 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 10px;
+  height: 300px;
+  background-color: rgb(190, 190, 231);
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.flex-container-5 .flex-item {
+  width: 60px;
+  background-color: purple;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-container-5 .item1 { height: 100px; }
+.flex-container-5 .item2 { height: 160px; }
+.flex-container-5 .item3 { height: 140px; }
+.flex-container-5 .item4 { height: 80px; }
+.flex-container-5 .item5 { height: 80px; }
+.flex-container-5 .item6 { height: 150px; }
+.flex-container-5 .item7 { height: 110px; }
+.flex-container-5 .item8 { height: 200px; }
 
 /* Flex Container 6 */
 
-.flex-container-6 .flex-item {
+.flex-container-6 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 10px;
+  height: 300px;
   width: 400px;
+  background-color: rgb(190, 190, 231);
+  padding: 10px;
+  box-sizing: border-box;
+}
+/* use height: 300px; on the container */
+
+.flex-container-6 .flex-item {
+  width: 100px;
+  height: 60px;
+  background-color: purple;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* use height: 300px; on the container */

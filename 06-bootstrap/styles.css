@@ -21,3 +21,8 @@ form > * {
 .box {
   height: 160px;
 }
+
+.purple {
+  background-color: #800080; /* or try #6a0dad or rebeccapurple */
+  color: white;
+}
